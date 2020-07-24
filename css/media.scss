@@ -1,0 +1,235 @@
+@media (max-width: 1400px) {
+	// OUR SERVICES
+	.our-services {
+		&__container {
+			width: 75%;
+		}
+	}
+	// OUR SERVICES
+}
+@media (max-width: 1200px) {
+	// OUR SERVICES
+	.our-services {
+		&__container {
+			width: 90%;
+		}
+	}
+	// OUR SERVICES
+}
+@media (max-width: 991px) {
+	// GLOBAL STYLES
+	.paroller-item {
+		display: none;
+	}
+	// GLOBAL STYLES
+	// HEADER
+	.header {
+		grid-template-rows: auto;
+		&__bottom {
+			grid-template-columns: 1fr;
+		}
+	}
+	// HEADER
+
+	// OUR SERVICES
+	.our-services {
+		&__container {
+			width: 100%;
+		}
+		&__block {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 40px;
+			padding: 15px 40px;
+			&>div {
+				&:nth-child(n+4) {
+					margin-top: 0;
+				}
+			}
+			&-item {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	// OUR SERVICES
+
+	// PRICES
+	.prices {
+		padding: 110px 0 150px 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		&>div {
+			&:first-child {
+				grid-row-start: 2;
+			}
+			
+		}
+		&__image {
+			grid-row-start: 1;
+			&>img {
+				display: none;
+			}
+			&-small {
+				position: relative;
+				top: 0;
+				margin-bottom: 30px;
+			}
+	    }
+		&__card {
+			&-img {
+				display: none;
+			}
+			&-body {
+				grid-gap: 0;
+				margin-bottom: 0;
+				padding: 30px 80px;
+			}
+			&-icon, &-title, &-subtitle, p {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	// PRICES
+
+	// PRODUCTS
+	.products {
+		&__block {
+			grid-template-columns: repeat(2, minmax(30px, max-content));
+			margin: -80px 0 50px 0;
+		}
+	}
+	// PRODUCTS
+
+	// CONTACT
+	.contact {
+		padding: 100px 0;
+		&__container {
+			width: 80%;
+		}
+		&__form {
+			&-fields {
+				grid-gap: 30px;
+			}
+		}
+	}
+	// CONTACT
+}
+
+@media (max-width: 768px) {
+	// WELCOME
+	.welcome {
+		grid-template-columns: 1fr;
+		&__card {
+			padding: 200px 0 70px 0;
+		}
+	}
+	// WELCOME
+
+	// OUR SERVICES
+	.our-services {
+		&__block {
+			padding: 15px 30px;
+			grid-gap: 30px;
+		}
+	}
+	// OUR SERVICES
+
+	// CONTACT
+	.contact {
+		&__form {
+			&-fields {
+				grid-template-columns: 1fr;
+				grid-gap: 0;
+			}
+		}
+	}
+	// CONTACT
+}
+
+@media (max-width: 576px) {
+	// HEADER
+	.header {
+		&__top {
+			grid-template-columns: 1fr;
+			justify-content: center;
+			align-items: center;
+			&>div {
+				&:last-child {
+					justify-self: center;
+					margin-top: 35px;
+				}
+			}
+		}
+	}
+	// HEADER
+
+	// WELCOME
+	.welcome {
+		&__card {
+			padding: 150px 0 50px 0;
+			&-body {
+				padding: 30px;
+			}
+			&-title {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	// WELCOME
+
+	// OUR SERVICES
+	.our-services {
+		&__block {
+			grid-template-columns: 1fr;
+		}
+		&__card {
+			&-body {
+				padding: 30px;
+			}
+			&-title {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	// OUR SERVICES
+
+	// PRICES
+	.prices {
+		&__card {
+			&-body {
+				padding: 30px;
+			}
+			&-title {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	// PRICES
+
+	// PRODUCTS
+	.products {
+		&__block {
+			grid-template-columns: 1fr;
+		}
+	}
+	// PRODUCTS
+
+	// CONTACT
+	.contact {
+		&__title {
+			h2 {
+				font-size: 2.5rem;
+			}
+		}
+	}
+	// CONTACT
+}
+
+@media (max-width: 380px) {
+	// WELCOME
+	.welcome {
+		&__card {
+			padding: 100px 0 40px 0;
+		}
+	}
+	// WELCOME
+}
